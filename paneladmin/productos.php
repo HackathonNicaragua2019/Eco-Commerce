@@ -123,7 +123,7 @@ $res = $conexion->LeerProductos();
           
             </div>
             <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Salir</button>
               <button type="submit" name="guardarProducto" class="btn btn-primary">Guardar</button>
                </form>
             </div>
