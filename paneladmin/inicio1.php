@@ -3,11 +3,6 @@ require_once('datos/Conexion.php');
 $res = $conexion->leerCompra();
 ?>
 <?php
-$carro = $conexion->leerCarrito();
-  while ($carr=mysqli_fetch_array($producto)){
-   echo"<option value='".$carr['idcarrito']."'>".$carr['producto']."</option>";
-   }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
