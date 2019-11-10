@@ -2,7 +2,7 @@
 require_once('datos/Conexion.php');
 $res = $conexion->leerCompra();
 ?>
-<?php
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
