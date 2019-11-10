@@ -50,6 +50,16 @@ class Conexion{
 		}
 	} ///Municipios
 
+	public function actualizarCantidadCarrito($idcarrito,$cantidad){
+	$sql = "update carrito SET cantidad='$cantidad' WHERE idcarrito=$idcarrito";
+		$res = mysqli_query($this->connection, $sql);
+		if($res){
+	 		return true;
+		}else{
+			return false;
+		}
+	} ///Municipios
+
 	public function desactivarRegistro($tabla, $indice, $id){
 		$sql = "update $tabla SET estado='Inactivo' WHERE $indice=$id";
 		$res = mysqli_query($this->connection, $sql);
